@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CSS Layout </title>
+    <style>a.menu_css_dimension{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3855518-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> <script>
+<!--
+function searchfield_focus(obj)
+{
+obj.style.color=""
+obj.style.fontStyle=""
+if (obj.value=="Search w3schools.com")
+	{obj.value=""}
+}
+var addr=document.location.href;
+function displayError()
+{
+document.getElementById("err_url").value=addr;
+document.getElementById("err_form").style.display="block";
+document.getElementById("err_desc").focus();
+hideSent();
+}
+function hideError()
+{
+document.getElementById("err_form").style.display="none";
+}
+function hideSent()
+{
+document.getElementById("err_sent").style.display="none";
+}
+function sendErr()
+{
+var xmlhttp;
+var err_url=document.getElementById("err_url").value;
+var err_email=document.getElementById("err_email").value;
+var err_desc=document.getElementById("err_desc").value;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("POST","/err_sup.asp",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+hideError();
+document.getElementById("err_sent").style.display="block";
+}
+//-->
+</script> <script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script> <script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16833175/BottomMediumRectangle', [300, 250], 'div-gpt-ad-1383210480969-0').addService(googletag.pubads());
+googletag.defineSlot('/16833175/LargePS', [[723, 280], [723, 400]], 'div-gpt-ad-1383210480969-1').addService(googletag.pubads());
+googletag.defineSlot('/16833175/MainLeaderboard', [728, 90], 'div-gpt-ad-1383210480969-2').addService(googletag.pubads());
+googletag.defineSlot('/16833175/SmallPS', [723, 170], 'div-gpt-ad-1383210480969-3').addService(googletag.pubads());
+googletag.defineSlot('/16833175/WideSkyScraper', [160, 600], 'div-gpt-ad-1383210480969-4').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","css");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script> <script>
+  (function() {
+    var cx = '012971019331610648934:m2tou3_miwy';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script> <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body><br>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1"><strong>배치</strong>(Layout) - width
+                와 max-width</span></h1>
+            <div class="chapter">
+              <div class="prev"><a class="chapter" href="CSS%20Margin.html">&laquo;
+                  Previous</a></div>
+              <div class="next"><a class="chapter" href="CSS%20Display.html">Next
+                  Chapter &raquo;</a></div>
+            </div>
+            <hr>
+            <p class="intro"> 이전 장에서 언급한 바와 같이, 블록-수준 요소는 항상 사용할 수 있는 전체 폭 (뻗을 수
+              있는 왼쪽과 오른쪽 끝까지 이르는)을 차지합니다.&nbsp;&nbsp;</p>
+            <p class="intro">블록-수준 요소의 width 를 설정하면, 그 컨테이너의 가장자리까지 뻗지 않도록 한다.
+              그런 다음에, 그 컨테이너의 수평 중앙에 그 요소를 위치시키기 위해서 margin 을 auto 로 설정할 수 있다. 그
+              요소는 지정된 폭을 차지하며, 남은 여백은 두 가장자리 사이에 동등하게 분할된다.&nbsp;&nbsp;</p>
+            <div class="w3-theme-border" style="border-width:3px;border-style:solid;width:500px; margin: auto;">
+              This &lt;div&gt; element has a width of 500px, and margin set to
+              auto.</div>
+            <p>참고: 위의 &lt;div&gt; 에서의 분제는 브라우저 창이 요소의 폭보다 작을 때 발생한다. 그러면, 브라우저는
+              가로 스크롤바를 그 페이지에 추가한다. </p>
+            <p>이러한 경우, 대신에 max-width 의 사용은 브라우저의 작은 윈도우 취급을 개선한다. 이는 소형 장치에서
+              사이트가 사용되도록 할 때 중요한다. </p>
+            <div class="w3-theme-border" style="border-width:3px;border-style:solid; max-width:500px; margin: auto;">
+              This &lt;div&gt; element has a max-width of 500px, and margin set
+              to auto.</div>
+            <p>Tip:브라우저 창의 크기를 500px 미만으로 조정하면, 두 div 사이의 차이를 볼 수 있다. </p>
+            <p><br>
+            </p>
+            <p>다음은 위의 두 div 의 예이다 : </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div.ex1
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  500px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  auto;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">div.ex2 </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">max-width:</span><span
+                  class="highVAL"> 500px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  auto;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_max-width"
+                class="w3-btn w3-margin-bottom">Try it yourself &raquo;</a> </div>
+            <hr>
+            <div class="tryit_ex"> <br>
+              <br>
+              <img src="http://www.w3schools.com/images/tryitimg.gif" style="width:40px;height:46px"
+                alt="Examples">
+              <h2>Try it Yourself - Examples</h2>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height">Set
+                the height of elements</a><br>
+              This example demonstrates how to set the height of different
+              elements.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_percent">Set
+                the height of an image using percent</a><br>
+              This example demonstrates how to set the height of an element
+              using a percent value.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_width">Set
+                the width of an element using a pixel value</a><br>
+              This example demonstrates how to set the width of an element using
+              a pixel value.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-height">Set
+                the maximum height of an element</a><br>
+              This example demonstrates how to set the maximum height of an
+              element.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-width_percent">Set
+                the maximum width of an element using percent</a><br>
+              This example demonstrates how to set the maximum width of an
+              element using a percent value.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_min-height">Set
+                the minimum height of an element</a><br>
+              This example demonstrates how to set the minimum height of an
+              element.</p>
+            <p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 14.2857141494751px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><a
+                target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_min-width">Set
+                the minimum width of an element using a pixel value</a><br>
+              This example demonstrates how to set the minimum width of an
+              element using a pixel value.</p>
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 14.2857141494751px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <h2 style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 30px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Test
+
+              Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_dimension1"
+                target="_blank">Exercise 1 &raquo;</a>&nbsp; <a class="w3-btn"
+                href="http://www.w3schools.com/css/exercise.asp?filename=exercise_dimension2"
+                target="_blank">Exercise 2 &raquo;</a> </p>
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 14.2857141494751px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <h2>All CSS Dimension Properties</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Property</th>
+                  <th style="width:58%">Description</th>
+                  <th>Values</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_height.asp">height</a></td>
+                  <td>Sets the height of an element</td>
+                  <td>auto<i><br>
+                      length<br>
+                      %<br>
+                    </i>inherit</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_max-height.asp">max-height</a></td>
+                  <td>Sets the maximum height of an element</td>
+                  <td>none<br>
+                    <i> length<br>
+                      %<br>
+                    </i>inherit</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_max-width.asp">max-width</a></td>
+                  <td>Sets the maximum width of an element</td>
+                  <td>none<br>
+                    <i> length<br>
+                      %<br>
+                    </i>inherit</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_min-height.asp">min-height</a></td>
+                  <td>Sets the minimum height of an element</td>
+                  <td> <i> length<br>
+                      %<br>
+                    </i>inherit</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_min-width.asp">min-width</a></td>
+                  <td>Sets the minimum width of an element</td>
+                  <td><i>length<br>
+                      %<br>
+                    </i>inherit</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_width.asp">width</a></td>
+                  <td>Sets the width of an element</td>
+                  <td>auto<i><br>
+                      length<br>
+                      %<br>
+                    </i>inherit</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="chapter">
+              <div class="prev"><a class="chapter" href="CSS%20Margin.html">&laquo;
+                  Previous</a></div>
+              <div class="next"><a class="chapter" href="CSS%20Display.html">Next
+                  Chapter &raquo;</a></div>
+            </div>
+            <hr><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

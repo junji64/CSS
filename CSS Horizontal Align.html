@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+                      <meta content="text/html; charset=utf-8" http-equiv="content-type">
+                      <title>CSS 수평 정렬</title>
+                      <style>a.menu_html_images{font-weight:bold;}</style>
+                      <meta name="viewport" content="width=device-width">
+                      <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+                      <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+                      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+                      <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1"> 수평 정렬 <br>
+              </span></h1>
+            <div class="chapter">
+                                          <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Float.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Combinators.html">Next
+                  Chapter »</a> </div>
+
+            </div>
+            <hr>
+            <div class="w3-theme-border" style="border-width:3px;border-style:solid; max-width:500px; margin: auto; padding: 15px">
+              <h2>In CSS, several properties can be used to align elements
+                horizontally.</h2>
+            </div>
+            <hr>
+            <h2>Block 요소 정렬</h2>
+            <p>블록 요소는 사용 가능한 전체 폭을 차지하며, 전과 후에 줄 바꿈이 있는 요소입니다.</p>
+            <p>Examples of block elements:</p>
+            <ul>
+              <li>&lt;h1&gt;</li>
+              <li>&lt;p&gt;</li>
+              <li>&lt;div&gt;</li>
+            </ul>
+            <p>For aligning text, see the <a href="CSS%20Text.html">CSS Text</a>
+              chapter.</p>
+            <p>이 장에서는 수평 레이아웃을 위해 블록 요소를 정렬하는 방법을 보여줍니다.</p>
+            <hr>
+            <h2>margin 속성을 사용한 중앙 정렬</h2>
+            <p>블록 요소 left 과 right margins 을 "auto"으로 설정하여 중앙 정렬 할 수 있습니다.</p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><b>Note: </b>Using margin:auto; will not work in IE8 and
+                    earlier, <b>unless a !DOCTYPE is declared.</b></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>left 과 right&nbsp;margins 을 auto 로 설정하면 사용할 수 있는 margin 을 동일하게
+              분할합니다. 결과로 요소는 중심에 놓입니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">.center
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  auto;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  60%;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  10px;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_align_container"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p><b>Tip:</b> width 가 100% 이면 중앙정렬은 효과가 없다.</p>
+            <hr>
+            <h2>position 속성을 이용한 왼쪽 과 오른쪽 정렬</h2>
+            <p>요소를 정렬하는 방법 중 하나는 절대 위치(absolute positioning)를 사용하는 것입니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">.right
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">position:</span><span
+
+                  class="highVAL"> absolute;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">right:</span><span class="highVAL">
+                  0px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  300px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  10px;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_align_pos"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p><b>Note:</b> 절대 위치(Absolute positioned)의 요소들은 기본적인 흐름으로부터 제거되고,
+              요소들에 중첩 될 수 있다.</p>
+            <hr>
+            <h2>브라우저 간의(Crossbrowser) 호환성 문제</h2>
+            <p>이렇게 요소를 정렬 할 때, &lt;body&gt; 요소에 대한 margin 과 padding 을 미리 정의하는 것이
+              좋습니다. 이것은 다른 브라우저들 있어서 시각적 차이를 방지합니다.</p>
+            <p>position 속성을 사용할 때, IE8 이전 버젼에는 문제가 있다. 컨테이너 요소가 (우리의 경우 &lt;div
+              class="container"&gt; ) 지정된 폭을 가지고 있으며, !DOCTYPE 선언이 없는 경우, IE8 이전
+              버전은 오른쪽에 17px의 여백을 추가합니다. 이는 스크롤바을 위해 예약된 공간으로 보인다. position속성을
+              사용할 때는 항상 !DOCTYPE 선언을 설정해야한다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  0;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  0;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">.container </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">position:</span><span
+
+                  class="highVAL"> relative;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  100%;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">.right </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">position:</span><span
+
+                  class="highVAL"> absolute;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">right:</span><span class="highVAL">
+                  0px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  300px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> #b0e0e6;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_align_pos_crossbrowser"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>float 속성을 사용한 왼쪽과 오른쪽 정렬</h2>
+            <p>요소를 정렬하는 하나의 방법은 float 속성을 사용하는 것이다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">.right
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">float:</span><span class="highVAL">
+                  right;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  300px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  10px;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_align_float"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>브라우저 간의(Crossbrowser) 호환성 문제</h2>
+            <p>이렇게 요소를 정렬 할 때, &lt;body&gt; 요소에 대한 margin 과 padding 을 미리 정의하는 것이
+              좋습니다. 이것은 다른 브라우저들 있어서 시각적 차이를 방지합니다.</p>
+            <p>float 속성을 사용할 때, IE8 이전 버젼에는 문제가 있다. 컨테이너 요소가 (우리의 경우 &lt;div
+              class="container"&gt; ) 지정된 폭을 가지고 있으며, !DOCTYPE 선언이 없는 경우, IE8 이전
+              버전은 오른쪽에 17px의 여백을 추가합니다. 이는 스크롤바을 위해 float&nbsp; 예약된 공간으로 보인다.
+              속성을 사용할 때는 항상 !DOCTYPE 선언을 설정해야한다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  0;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  0;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">.right </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">float:</span><span class="highVAL">
+                  right;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  300px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> #b0e0e6;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_align_float_crossbrowser"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <h2>Test Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_align1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_align2"
+
+                target="_blank">Exercise 2 »</a> </p>
+            <br>
+            <div class="chapter">
+ <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Float.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Combinators.html">Next
+                  Chapter »</a> </div>
+
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

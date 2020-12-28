@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CSS 크기(Dimension)</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body><br>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1">크기(Dimension) - 높이(Height)/너비(Width)<br>
+              </span></h1>
+            <div class="chapter">
+                            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Margin.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Display.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <p class="intro"> CSS 요소의  크기는 <code class="w3-codespan" class="w3-codespan">height</code>와 <code class="w3-codespan" class="w3-codespan">width</code> 속성으로 제어 할 수 있습니다.</p>
+            <hr>
+            <h2>height 와 width 설정</h2>
+            height 와 width 속성은 요소의 높이와 폭을 설정하는데 사용됩니다. <br>
+            <br>
+            height와 width는 auto로 설정될 수 있으며 (이것이 기본값이며, 브라우저가 높이와 폭을 계산하는 것을
+            의미합니다.), 또는 px, cm 등의 길이 값 또는 포함된 블록의 퍼센트(%)로 설정될 수 있습니다. <br>
+            <br>
+            <div class="w3-theme-border" style="border-width:3px;border-style:solid; height:100px; width:500px;">
+              This &lt;div&gt; element has a height of 100 pixels and a width of
+              500 pixels.</div>
+            <br>
+            참고: height 와 width 속성은 padding, border, 또는 margin을 포함하지 않는다; 이들은 요소의
+            padding, border 와 margin 내부의 영역의 높이/폭을 설정한다. <br>
+            <br>
+            다음의 예는 100픽셀 높이와 500픽셀 폭의 &lt;div&gt; 요소를 보여준다.<br>
+            <br>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  500px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">height:</span><span class="highVAL">
+                  100px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                }</div>
+              <p> <a class="w3-btn" target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_width">Try
+                  it yourself »</a> </p>
+            </div>
+            <br>
+            <h2>max-width 설정</h2>
+            <p>max-width 속성은 요소의 최대 폭을 설정하는데 사용된다. </p>
+            <p> max-width 은 px, cm 등과 같은 길이 값이나 포함하는 블록의 퍼센트(%)로 지정될 수 있으며, 또한
+              none 으로도 설정 될 수 있다 (이것이 기본 값이며, 최대 폭이 없음을 의미한다.) . &nbsp;&nbsp;</p>
+            <p>&lt;div&gt;의 문제는 요소의 브라우저의 창이 요소의 폭(500px)보다 작을 때 발생한다. 그러면,
+              브라우저는 페이지에 가로 스크롤바를 추가한다. </p>
+            <p>이러한 경우, 대신에 max-width 의 사용은 브라우저의 작은 윈도우 취급을 개선한다. 이는 소형 장치에서
+              사이트가 사용되도록 할 때 중요한다. </p>
+            <p>Tip:브라우저 창의 크기를 500px 미만으로 조정하면, 두 div 사이의 차이를 볼 수 있다. </p>
+            <div class="w3-theme-border" style="border-width:3px;border-style:solid;height:100px; max-width:500px;">
+              This &lt;div&gt; element has a height of 100 pixels and a
+              max-width of 500 pixels.</div>
+            <p>참고: max-width 속성의 값이 width 를 무효화 한다.</p>
+            <p>다음의 예는 100 픽셀의 높이와 500 픽셀의 폭을 갖는 &lt;div&gt; 요소를 보여준다:</p>
+            <br>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">max-width:</span><span
+
+                  class="highVAL"> 500px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">height:</span><span class="highVAL">
+                  100px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                }</div>
+              <p> <a class="w3-btn" target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max_width">Try
+                  it yourself »</a> </p>
+            </div>
+            <br>
+            <h1>CSS width 와 max-width</h1>
+            <hr>
+            <p class="intro"> 이전 장에서 언급한 바와 같이, 블록-수준 요소는 항상 사용할 수 있는 전체 폭 (뻗을 수
+              있는 왼쪽과 오른쪽 끝까지 이르는)을 차지합니다.&nbsp;&nbsp;</p>
+            <p class="intro">블록-수준 요소의 width 를 설정하면, 그 컨테이너의 가장자리까지 뻗지 않도록 한다.
+              그런 다음에, 그 컨테이너의 수평 중앙에 그 요소를 위치시키기 위해서 margin 을 auto 로 설정할 수 있다. 그
+              요소는 지정된 폭을 차지하며, 남은 여백은 두 가장자리 사이에 동등하게 분할된다.&nbsp;&nbsp;</p>
+            <div class="w3-theme-border" style="border-width:3px;border-style:solid;width:500px; margin: auto;">
+              This &lt;div&gt; element has a width of 500px, and margin set to
+              auto.</div>
+            <p>참고: 위의 &lt;div&gt; 에서의 분제는 브라우저 창이 요소의 폭보다 작을 때 발생한다. 그러면, 브라우저는
+              가로 스크롤바를 그 페이지에 추가한다. </p>
+            <p>이러한 경우, 대신에 max-width 의 사용은 브라우저의 작은 윈도우 취급을 개선한다. 이는 소형 장치에서
+              사이트가 사용되도록 할 때 중요한다. </p>
+            <div class="w3-theme-border" style="border-width:3px;border-style:solid; max-width:500px; margin: auto;">
+              This &lt;div&gt; element has a max-width of 500px, and margin set
+              to auto.</div>
+            <p>Tip:브라우저 창의 크기를 500px 미만으로 조정하면, 두 div 사이의 차이를 볼 수 있다. </p>
+            <p><br>
+            </p>
+            <p>다음은 위의 두 div 의 예이다 : </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div.ex1
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  500px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  auto;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">div.ex2 </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">max-width:</span><span
+
+                  class="highVAL"> 500px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  auto;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  3px solid #73AD21;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_max-width"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <hr>
+            <div class="tryit_ex"> <img src="http://www.w3schools.com/images/tryitimg.gif"
+
+                style="width:40px;height:46px" alt="Examples">
+              <h2>Try it Yourself - Examples</h2>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height">Set
+                the height of elements</a><br>
+              This example demonstrates how to set the height of different
+              elements.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_percent">Set
+                the height of an image using percent</a><br>
+              This example demonstrates how to set the height of an element
+              using a percent value.</p>
+            
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-height">Set
+                the min-height and max-height of an element</a><br>
+              This example demonstrates how to set the maximum height of an
+              element.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-width">Set
+                the min-width and max-width of an element using percent</a><br>
+              This example demonstrates how to set the maximum width of an
+              element.</p>
+            
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 14.2857141494751px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <h2 style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 30px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Test
+
+              Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_dimension1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_dimension2"
+
+                target="_blank">Exercise 2 »</a> </p>
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 14.2857141494751px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <h2>All CSS Dimension Properties</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Property</th>
+                  <th style="width:58%">Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_height.asp">height</a></td>
+                  <td>Sets the height of an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_max-height.asp">max-height</a></td>
+                  <td>Sets the maximum height of an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_max-width.asp">max-width</a></td>
+                  <td>Sets the maximum width of an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_min-height.asp">min-height</a></td>
+                  <td>Sets the minimum height of an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_min-width.asp">min-width</a></td>
+                  <td>Sets the minimum width of an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_dim_width.asp">width</a></td>
+                  <td>Sets the width of an element</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="chapter">
+                            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Margin.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Display.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
