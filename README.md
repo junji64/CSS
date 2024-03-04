@@ -31,12 +31,10 @@ CSS Style Sheets Tutorial
 
 [15. Positioning](https://junji64.github.io/CSS/CSS%20Positioning.html)
 
-[16. Float] (https://junji64.github.io/CSS/CSS%20Float.html)
+[16. Float](https://junji64.github.io/CSS/CSS%20Float.html)
 
 [17. Combinators](https://junji64.github.io/CSS/CSS%20Combinators.html)
 
 [18. Pseudo-classes](https://junji64.github.io/CSS/CSS%20Pseudo-classes.html)
 
 [19. Pseudo-elements](https://junji64.github.io/CSS/CSS%20Pseudo-elements.html)
-
-[20. 
